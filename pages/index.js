@@ -1,7 +1,7 @@
 import axios from "axios";
 import Billionaire from "../components/Billionaire";
 import { getAge, toBillions } from "../lib/billionaire";
-import homeStyles from "../styles/Home.module.css"
+import homeStyles from "../styles/Home.module.scss"
 
 const Home = ({ billionaireList }) => {
   const billionaire = billionaireList?.map((billionaire) => {
