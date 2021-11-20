@@ -1,7 +1,7 @@
 import axios from "axios";
 import Billionaire from "../components/Billionaire";
 import { getAge, toBillions } from "../lib/billionaire";
-import homeStyles from "../styles/Home.module.scss"
+import homeStyles from "../styles/Home.module.scss";
 
 const Home = ({ billionaireList }) => {
   const billionaire = billionaireList?.map((billionaire) => {
@@ -20,7 +20,14 @@ const Home = ({ billionaireList }) => {
   });
 
   return (
+    <>
+      <div className={homeStyles.title}>
+        <h1>
+          Step 1: Choose your <del>victim</del> billionaire
+        </h1>
+      </div>
       <div className={homeStyles.container}>{billionaire}</div>
+    </>
   );
 };
 
